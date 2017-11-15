@@ -1,0 +1,158 @@
+// Import global variables
+@import '../../../assets/scss/_utils.scss';
+
+header {
+  position: relative;
+  background-color: $purple;
+  @include filter-gradient($dark-purple, $light-purple, vertical);
+  @include background-image(linear-gradient($dark-purple 0%, $light-purple 100%));
+
+  .box-title {
+    margin-top: 20px;
+    color: white;
+    text-align: center;
+    z-index: 13;
+    @include media-breakpoint-up(md) {
+      text-align: left;
+      margin-top: 150px;
+      margin-bottom: 150px;
+    }
+    .title {
+      font-family: "industry-inc-base", sans-serif;
+      font-size: 3rem;
+      @include media-breakpoint-up(sm) {
+        font-size: 3.5rem;
+      }
+      @include media-breakpoint-up(xl) {
+        font-size: 4.5rem;
+      }
+    }
+    .upper-title {
+      font-family: "roboto-condensed", sans-serif;
+      font-weight: 300;
+      text-transform: uppercase;
+    }
+    .sub-title {
+      font-family: "roboto-condensed", sans-serif;
+      font-weight: 300;
+      font-size: 1.3rem;
+      @include media-breakpoint-only(sm) {
+        margin: 0 20%;
+      }
+      @include media-breakpoint-up(md) {
+        font-size: 1.50rem;
+      }
+      @include media-breakpoint-up(lg) {
+        font-size: 2rem;
+      }
+    }
+  }
+  .majortom{
+    width: 80%;
+    margin: 20px auto;
+    z-index: 12;
+    @include media-breakpoint-up(md) {
+      position: absolute;
+      top: 130px;
+      left: auto;
+      right: 10%;
+      width: 300px;
+    }
+    @include media-breakpoint-up(lg) {
+      position: absolute;
+      top: 100px;
+      left: auto;
+      right: 15%;
+      width: 375px;
+    }
+  }
+  .hills-front {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: auto;
+    z-index: 11;
+    img {
+      width: 100%;
+    }
+  }
+  .hills-back {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: auto;
+    z-index: 10;
+    img {
+      width: 100%;
+    }
+  }
+  .pentagon {
+    position: absolute;
+    right: 10%;
+    bottom: 2%;
+    z-index: 9;
+    width: 200px;
+    img {
+      width: 100%;
+    }
+    &.pos1 {
+      right: 10%;
+      bottom: 2%;
+      width: 120px;
+      @include media-breakpoint-up(md) {
+        right: 12%;
+      }
+    }
+    &.pos2 {
+      right: 70%;
+      bottom: 12%;
+      width: 80px;
+      @include media-breakpoint-up(md) {
+        right: 40%;
+      }
+    }
+    &.pos3 {
+      right: 50%;
+      bottom: 30%;
+      width: 180px;
+      @include media-breakpoint-up(md) {
+        right: 40%;
+      }
+    }
+    &.pos4 {
+      right: 16%;
+      bottom: 24%;
+      width: 60px;
+      @include media-breakpoint-up(md) {
+        right: 8%;
+      }
+    }
+    &.pos5 {
+      right: 11%;
+      bottom: 54%;
+      width: 200px;
+      @include media-breakpoint-up(md) {
+        right: 5%;
+      }
+    }
+    &.pos6 {
+      right: 70%;
+      bottom: 78%;
+      width: 150px;
+      @include media-breakpoint-up(md) {
+        right: 35%;
+      }
+    }
+    &.pos7 {
+      right: 70%;
+      bottom: 57%;
+      width: 80px;
+      @include media-breakpoint-up(md) {
+        right: 40%;
+      }
+    }
+  }
+
+}
