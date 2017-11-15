@@ -1,0 +1,9 @@
+// Import compass mixins
+@import '~compass-mixins/lib/_compass.scss';
+// Import bootstrap for mixins
+@import '~bootstrap/scss/bootstrap.scss';
+
+// COLORS
+$purple: #62278d;
+$dark-purple: darken($purple, 10);
+$light-purple: lighten($purple, 10);
