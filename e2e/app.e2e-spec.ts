@@ -9,6 +9,6 @@ describe('tdonatti App', () => {
 
   it('should display welcome message', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('Fron-end Developer');
+    expect(page.getParagraphText()).toEqual('Front-end Developer');
   });
 });
