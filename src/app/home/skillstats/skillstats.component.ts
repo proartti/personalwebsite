@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { SkillsetComponent } from './skillset.component';
-import { DEVELOPMENT } from '../../_data/skillstats';
+import { DEVELOPMENT, TOOLING, PERSONAL } from '../../_data/skillstats';
 import { SkillStats } from '../../_models/home.model';
 
 
@@ -12,6 +12,8 @@ import { SkillStats } from '../../_models/home.model';
 export class SkillstatsComponent implements OnInit {
 
   developmentStats: SkillStats[] = DEVELOPMENT;
+  toolingStats: SkillStats[] = TOOLING;
+  personalStats: SkillStats[] = PERSONAL;
 
   constructor() {}
 

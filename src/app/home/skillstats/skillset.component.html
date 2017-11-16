@@ -1,6 +1,6 @@
 
-<span *ngFor="let star of numbersStars"
-  [class]="setStarClass(star)">
+  <span *ngFor="let className of starsClass"
+  [class]="className">
 
     <svg viewBox="0 0 74 70">
       <defs>
@@ -15,3 +15,5 @@
         transform="translate(-388 -292)"/>
     </svg>
 </span>
+
+

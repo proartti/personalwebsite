@@ -10,6 +10,8 @@ export class SkillsetComponent implements OnInit {
   @Input() stat: number;
 
   numbersStars: any;
+  starsClass: any[] = [];
+  showStars = false;
 
   constructor() {
     this.numbersStars = Array(5).fill(0).map(
@@ -18,25 +20,27 @@ export class SkillsetComponent implements OnInit {
   }
 
   ngOnInit() {
-    console.log('stat', this.stat);
-    console.log('this.numbersStars', this.numbersStars);
-
+    this.setStarClass();
   }
 
-  setStarClass(index: number) {
-
-    const starPosition = index + 1;
+  setStarClass() {
     const starsNumber = Number(this.stat / 2);
 
-    console.log('starsNumber', starsNumber, Math.floor(starsNumber), starPosition);
+    for (const number of this.numbersStars) {
 
-    if (starPosition <= starsNumber) {
-      return 'gold-star';
+      const starPosition = number + 1;
+
+      if (starPosition <= starsNumber) {
+        this.starsClass.push('gold-star');
+        continue;
+      }
+      if (this.stat % 2 !== 0 && Math.ceil(starsNumber) === starPosition) {
+        this.starsClass.push('half-star');
+        continue;
+      }
+      this.starsClass.push('grey-star');
     }
-    if (this.stat % 2 !== 0 && Math.ceil(starsNumber) === starPosition) {
-      return 'half-star';
-    }
-    return 'grey-star';
+
+    this.showStars = true;
   }
-
 }
