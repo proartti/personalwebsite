@@ -1,0 +1,31 @@
+// Import global variables
+@import '../../../assets/scss/_utils.scss';
+
+#skillstats {
+  .skillstat-box {
+    .skillstat-title {
+      font-family: "industry-inc-base", sans-serif;
+      font-size: 1em;
+      color: $sectionTitle;
+    }
+    dl {
+      margin-bottom: 2em;
+      dt {
+        font-family: "roboto-condensed", sans-serif;
+        font-weight: 300;
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        &.spacer {
+          margin-bottom: 1.5em;
+        }
+      }
+      dd {
+        app-skillset {
+          display: flex;
+          align-items: center;
+        }
+      }
+    }
+  }
+}

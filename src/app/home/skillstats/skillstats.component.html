@@ -1,3 +1,51 @@
-<p>
-  skillstats works!
-</p>
+<section id="skillstats">
+  <div class="section-heading">
+    <h3 class="section-title">Skill <small>stats</small></h3>
+    <h4 class="section-subtitle">Detailed skill map to </h4>
+  </div>
+
+  <div class="container">
+    <div class="row">
+
+      <div class="col-md-4">
+        <div class="skillstat-box">
+          <h3 class="skillstat-title">Development</h3>
+
+          <dl class="row">
+            <ng-template ngFor let-skillstat [ngForOf]="developmentStats" let-i="index">
+              <dt class="col-6" [ngClass]="{'spacer' : skillstat.spacer}" >{{skillstat.skill}}r{{skillstat.spacer}}</dt>
+              <dd class="col-6"> <app-skillset [stat]="skillstat.stat"></app-skillset></dd>
+            </ng-template>
+          </dl>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="skillstat-box">
+          <h3 class="skillstat-title">Tooling</h3>
+
+          <dl class="row">
+            <ng-template ngFor let-skillstat [ngForOf]="developmentStats" let-i="index">
+              <dt class="col-6" [ngClass]="{'spacer' : skillstat.spacer}" >{{skillstat.skill}}r{{skillstat.spacer}}</dt>
+              <dd class="col-6"> <app-skillset [stat]="skillstat.stat"></app-skillset></dd>
+            </ng-template>
+          </dl>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="skillstat-box">
+          <h3 class="skillstat-title">Personal/productive</h3>
+
+          <dl class="row">
+            <ng-template ngFor let-skillstat [ngForOf]="developmentStats" let-i="index">
+              <dt class="col-6" [ngClass]="{'spacer' : skillstat.spacer}" >{{skillstat.skill}}r{{skillstat.spacer}}</dt>
+              <dd class="col-6"> <app-skillset [stat]="skillstat.stat"></app-skillset></dd>
+            </ng-template>
+          </dl>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
