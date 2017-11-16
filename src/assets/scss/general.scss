@@ -1,0 +1,35 @@
+// Import global variables
+@import './_utils.scss';
+
+// General styles
+
+// SECTIONS
+section {
+  padding: 6em 0;
+  background-color: $bluegrey;
+  .section-heading {
+    text-align: center;
+    margin-bottom: 6em;
+    .section-title {
+      font-family: "industry-inc-base", sans-serif;
+      text-transform: uppercase;
+      color: $sectionTitle;
+      font-size: 2em;
+      margin-bottom: 0;
+      @include media-breakpoint-up(md) {
+        font-size: 2.5em;
+      }
+      >small {
+        font-family: "roboto-condensed", sans-serif;
+        font-weight: 300;
+        text-transform: uppercase;
+        color: $sectionTitleSmall;
+        font-size: 1em;
+      }
+    }
+    .section-subtitle {
+      font-family: "roboto", sans-serif;
+      color: $sectionSubTitle;
+    }
+  }
+}

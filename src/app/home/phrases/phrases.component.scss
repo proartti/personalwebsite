@@ -1,0 +1,71 @@
+// Import global variables
+@import '../../../assets/scss/_utils.scss';
+
+#phrases {
+  background-image: url('/assets/img/bg-space.jpg');
+  background-position: center bottom;
+  background-attachment: fixed;
+  background-repeat: repeat-y;
+  padding: 10rem 0 10rem;
+  @include media-breakpoint-up(sm) {
+    padding-bottom: 12rem;
+  }
+  position: relative;
+  .edge-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    img {
+      width: 100%;
+      height: 45px;
+    }
+  }
+  .edge-bottom {
+    position: absolute;
+    top: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    img {
+      width: 100%;
+      height: 45px;
+    }
+  }
+  .phrase-box {
+    text-align: center;
+    color: white;
+    margin: 0 10%;
+    @include media-breakpoint-up(md) {
+      font-size: 1.5em;
+    }
+    .phrase-text {
+      font-family: "roboto-condensed", sans-serif;
+      font-weight: 400;
+      font-size: 1.2em;
+
+    }
+    .phrase-author {
+      font-family: "industry-inc-base", sans-serif;
+      font-size: 1em;
+      color: grey;
+      margin-top: 1em;
+    }
+  }
+  .explorer {
+    position: absolute;
+    bottom: 15px;
+    right: 5%;
+    width: 60%;
+    @include media-breakpoint-up(sm) {
+      width: 40%;
+      right: 10%;
+    }
+    @include media-breakpoint-up(lg) {
+      width: 30%;
+      right: 15%;
+    }
+  }
+}

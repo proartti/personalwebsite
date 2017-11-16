@@ -7,9 +7,28 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PhrasesComponent implements OnInit {
 
+  phrases: Phrase[] = [
+    {
+      text: 'Bacon is life',
+      author: 'unkown'
+    },
+    {
+      text: 'My inspiration is in put some criativity in all my projects.',
+      author: 'Tiago Donatti'
+    }
+  ];
+
+  currentPhrase = <Phrase>{};
+
   constructor() { }
 
   ngOnInit() {
+
   }
 
+}
+
+export interface Phrase {
+  text: string;
+  author: string;
 }
