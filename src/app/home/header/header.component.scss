@@ -15,7 +15,7 @@ header {
     @include media-breakpoint-up(md) {
       text-align: left;
       margin-top: 150px;
-      margin-bottom: 150px;
+      margin-bottom: 40px;
     }
     .title {
       font-family: "industry-inc-base", sans-serif;
@@ -154,5 +154,34 @@ header {
       }
     }
   }
+  .scroll-action {
+    text-align: center;
+    padding-bottom: 80px;
+    position: relative;
+    z-index: 20;
+    display: none;
+    @include media-breakpoint-up(md) {
+      display: block;
+    }
+    .scroll-action-link {
+      display: inline-block;
+      transition: .3s all;
+      position: relative;
+      width: 28px;
+      height: 40px;
+      cursor: pointer;
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 28px;
+        margin-top: 0;
+        animation: bounce 1s infinite alternate;
+      }
+    }
+  }
+}
 
+@keyframes bounce {
+  to { top: 10px; }
 }
