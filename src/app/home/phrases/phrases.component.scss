@@ -67,5 +67,9 @@
       width: 30%;
       right: 15%;
     }
+    @include media-breakpoint-up(xl) {
+      width: 25%;
+      right: 15%;
+    }
   }
 }
