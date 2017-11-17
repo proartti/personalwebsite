@@ -2,6 +2,9 @@
 @import '~compass-mixins/lib/_compass.scss';
 // Import bootstrap for grid mixins
 @import '~bootstrap/scss/bootstrap-grid.scss';
+// Font awesome
+$fa-font-path : '~font-awesome-sass/assets/fonts/font-awesome/';
+@import '~font-awesome-sass/assets/stylesheets/font-awesome';
 
 // COLORS
 $purple: #62278d;
