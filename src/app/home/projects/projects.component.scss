@@ -5,4 +5,9 @@
   background-color: white;
   position: relative;
   z-index: 20;
+  .card-title {
+    font-family: "industry-inc-base", sans-serif;
+    font-size: 1em;
+    color: $sectionTitle;
+  }
 }
