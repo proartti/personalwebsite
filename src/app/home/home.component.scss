@@ -8,8 +8,10 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  overflow: hidden;
   @include media-breakpoint-up(md) {
     padding: 0 10%;
+    overflow: visible;
   }
   .majortom-flag {
     position: relative;
@@ -25,12 +27,16 @@
   }
   .hill-flag {
     position: absolute;
-    bottom: 75px;
+    bottom: 120px;
     z-index: 2;
+
     img {
       width: 100%;
       height: 50px;
       @include media-breakpoint-only(sm) {
+        height: 75px;
+      }
+      @include media-breakpoint-up(lg) {
         height: 75px;
       }
     }
@@ -40,7 +46,7 @@
     }
     .hill-flag-background {
       position: absolute;
-      bottom: -100px;
+      bottom: -200px;
       z-index: -1;
       left: -5%;
       width: 420px;
@@ -58,28 +64,55 @@
         bottom: -180px;
       }
       @include media-breakpoint-up(xl) {
+        left: 13%;
         width: 750px;
       }
     }
   }
   .btn-box {
-    padding: 1.5rem;
+
     text-align: center;
-    height: 85px;
+    height: 130px;
     width: 100%;
     position: relative;
     z-index: 3;
     background-color: white;
     @include media-breakpoint-up(md) {
       display: flex;
-      -webkit-box-flex: 0;
-      -ms-flex: 0 0 50%;
-      flex: 0 0 50%;
+      flex-direction: row;
+      flex-wrap: wrap;
       max-width: 50%;
       height: auto;
       align-items: center;
       justify-content: center;
       background-color: transparent;
+    }
+    >h3 {
+      margin-top: 40px;
+      @include media-breakpoint-up(md) {
+        display: block;
+        margin-top: 0;
+        flex: 0 1 100%;
+      }
+    }
+    >a {
+      flex: 1 0 20%;
+      @include media-breakpoint-up(md) {
+        margin: .25em;
+      }
+      >span {
+        display: none;
+        @include media-breakpoint-up(sm) {
+          display: inline;
+        }
+      }
+      >i {
+        @include media-breakpoint-up(md) {
+          font-size: 3em;
+          display: block;
+        }
+      }
+
     }
   }
 }
