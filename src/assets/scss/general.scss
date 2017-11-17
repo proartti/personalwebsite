@@ -30,6 +30,16 @@ section {
     .section-subtitle {
       font-family: "roboto", sans-serif;
       color: $sectionSubTitle;
+      margin: 0 1em;
     }
   }
+}
+
+
+footer {
+  padding: 1em;
+  background-color: $bluegrey;
+  text-align: center;
+  font-family: "roboto-condensed", sans-serif;
+  font-weight: 300;
 }
