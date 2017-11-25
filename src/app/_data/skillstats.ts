@@ -7,6 +7,11 @@ export const DEVELOPMENT: SkillStats[] = [
     spacer: false
   },
   {
+    skill: 'React',
+    stat: 6,
+    spacer: false
+  },
+  {
     skill: 'Ionic',
     stat: 8,
     spacer: false
@@ -18,12 +23,7 @@ export const DEVELOPMENT: SkillStats[] = [
   },
   {
     skill: 'JavaSctipt',
-    stat: 8,
-    spacer: false
-  },
-  {
-    skill: 'React',
-    stat: 4,
+    stat: 9,
     spacer: false
   },
   {
@@ -105,6 +105,11 @@ export const TOOLING: SkillStats[] = [
     spacer: false
   },
   {
+    skill: 'Docker',
+    stat: 3,
+    spacer: false
+  },
+  {
     skill: 'Linux/Apache',
     stat: 4,
     spacer: false
@@ -129,7 +134,7 @@ export const TOOLING: SkillStats[] = [
 export const PERSONAL: SkillStats[] = [
   {
     skill: 'Organization',
-    stat: 8,
+    stat: 7,
     spacer: false
   },
   {
@@ -149,7 +154,7 @@ export const PERSONAL: SkillStats[] = [
   },
   {
     skill: 'Comunicative',
-    stat: 8,
+    stat: 7,
     spacer: false
   },
   {
