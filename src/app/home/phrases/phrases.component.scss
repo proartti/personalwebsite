@@ -6,9 +6,13 @@
   background-position: center bottom;
   background-attachment: fixed;
   background-repeat: repeat-y;
+  background-color: $spacepurple;
   padding: 10rem 0 10rem;
   @include media-breakpoint-up(sm) {
     padding-bottom: 12rem;
+  }
+  @include media-breakpoint-up(xl) {
+    background-size: cover;
   }
   position: relative;
   .edge-top {
@@ -68,8 +72,8 @@
       right: 15%;
     }
     @include media-breakpoint-up(xl) {
-      width: 25%;
-      right: 15%;
+      width: 425px;
+      right: calc(50% - 500px);
     }
   }
 }

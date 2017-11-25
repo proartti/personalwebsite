@@ -48,7 +48,7 @@ header {
       }
     }
   }
-  .majortom{
+  .majortom {
     width: 80%;
     margin: 20px auto;
     z-index: 12;
@@ -65,6 +65,9 @@ header {
       left: auto;
       right: 15%;
       width: 375px;
+    }
+    @include media-breakpoint-up(xl) {
+      right: calc(50% - 400px);
     }
   }
   .hills-front {
