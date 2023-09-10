@@ -9,6 +9,11 @@ TBD nice text about this personal project
 - Invoice and payment management
 - Hybrid native App
 
+## TechStack
+- NextJS
+- TypeScript
+- 
+
 
 ----
 
