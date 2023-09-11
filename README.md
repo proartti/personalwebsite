@@ -13,7 +13,7 @@ TBD nice text about this personal project
 - [NextJS](https://nextjs.org/docs)
 - TypeScript
 - [Tailwind](https://tailwindcss.com/)
-- Sass
+- [Sass](https://sass-lang.com/)
 - [Font Awesome (react)](https://fontawesome.com/docs/web/use-with/react/)
 - [Prisma](https://www.prisma.io/nextjs)
 - Prettier
