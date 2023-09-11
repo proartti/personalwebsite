@@ -13,7 +13,9 @@ TBD nice text about this personal project
 - [NextJS](https://nextjs.org/docs)
 - TypeScript
 - [Tailwind](https://tailwindcss.com/)
+- Sass
 - [Prisma](https://www.prisma.io/nextjs)
+- Prettier
 
 ## Project management and documentation
 Please see the Notion Page for more info about:
