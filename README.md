@@ -14,6 +14,7 @@ TBD nice text about this personal project
 - TypeScript
 - [Tailwind](https://tailwindcss.com/)
 - Sass
+- [Font Awesome (react)](https://fontawesome.com/docs/web/use-with/react/)
 - [Prisma](https://www.prisma.io/nextjs)
 - Prettier
 
