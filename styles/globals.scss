@@ -4,8 +4,11 @@
 
 @import 'utils';
 
-// General styles
+// Import compass mixins
+@import '~compass-mixins/lib/compass';
 
+
+// General styles
 :root {
 	--foreground-rgb: 0, 0, 0;
 	--background-start-rgb: 214, 219, 220;
