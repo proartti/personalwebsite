@@ -38,7 +38,7 @@ section {
 			color: $sectionTitle;
 			font-size: 2em;
 			margin-bottom: 0;
-			@include media-breakpoint-up(md) {
+			@screen md {
 				font-size: 2.5em;
 			}
 
