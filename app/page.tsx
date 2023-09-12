@@ -1,11 +1,68 @@
+import './page.scss'
+
+import Header from '../components/Header'
+
 export default function Home() {
 	return (
-		<main className="flex min-h-screen flex-col items-center justify-center p-24">
-			<div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-				<p className="flex m-8 w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30 text-4xl">
-					Hello World
-				</p>
+		<>
+			<Header />
+
+			<div>about</div>
+
+			<div>phrases</div>
+
+			<div className="mid-position">
+				<div className="container position-relative">
+					<div className="majortom-flag">
+						<img src="assets/img/majortom-flag.svg" />
+					</div>
+					<div className="btn-box">
+						<h3>Let's stay connected</h3>
+						<a
+							href="https://www.behance.net/proartti"
+							className="btn btn-primary btn-lg"
+							target="_blank"
+						>
+							<i className="fa fa-behance"></i> <span>Behance</span>
+						</a>
+						<a
+							href="https://github.com/proartti/"
+							className="btn btn-primary btn-lg"
+							target="_blank"
+						>
+							<i className="fa fa-github"></i> <span>GitHub</span>
+						</a>
+						<a
+							href="https://www.linkedin.com/in/proartti/"
+							className="btn btn-primary btn-lg"
+							target="_blank"
+						>
+							<i className="fa fa-linkedin"></i> <span>LinkedIn</span>
+						</a>
+						<a
+							href="https://twitter.com/tiagodonatti"
+							className="btn btn-primary btn-lg"
+							target="_blank"
+						>
+							<i className="fa fa-twitter"></i> <span>Twitter</span>
+						</a>
+					</div>
+				</div>
+
+				<div className="hill-flag">
+					<img src="assets/img/hill-flag.svg" />
+				</div>
+
+				<div className="container position-relative">
+					<div className="hill-flag-background">
+						<img src="assets/img/hill-flag-background.svg" />
+					</div>
+				</div>
 			</div>
-		</main>
+
+			<div>projects</div>
+
+			<footer>2021 - All rights reserved</footer>
+		</>
 	)
 }
