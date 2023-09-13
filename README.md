@@ -15,7 +15,7 @@ TBD nice text about this personal project
 - [Tailwind](https://tailwindcss.com/)
 - [Sass](https://sass-lang.com/)
 - [Font Awesome (react)](https://fontawesome.com/docs/web/use-with/react/)
-- [GSAP](https://greensock.com/docs/)
+- [Motion](https://motion.dev/)
 - [Prisma](https://www.prisma.io/nextjs)
 - Prettier
 
