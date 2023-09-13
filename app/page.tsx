@@ -1,3 +1,5 @@
+import React from 'react'
+
 import './page.scss'
 
 import Header from '../components/Header'
@@ -7,7 +9,7 @@ export default function Home() {
 		<>
 			<Header />
 
-			<div>about</div>
+			<div className="about">about</div>
 
 			<div>phrases</div>
 

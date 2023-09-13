@@ -20,8 +20,14 @@ header {
 		.title {
 			font-family: 'industry-inc-base', sans-serif;
 			font-size: 3rem;
+			line-height: 1.2;
+			margin: 0 5%;
 			@screen sm {
 				font-size: 3.5rem;
+				margin: 0 15%;
+			}
+			@screen md {
+				margin: 0;
 			}
 			@screen xl {
 				font-size: 4.5rem;
@@ -36,7 +42,10 @@ header {
 			font-family: 'roboto-condensed', sans-serif;
 			font-weight: 300;
 			font-size: 1.3rem;
-			margin: 0 20%;
+			margin: 0 10%;
+			@screen sm {
+				margin: 0 20%;
+			}
 			@screen md {
 				margin: 0;
 				font-size: 1.5rem;
@@ -153,32 +162,6 @@ header {
 			width: 80px;
 			@screen md {
 				right: 40%;
-			}
-		}
-	}
-	.scroll-action {
-		text-align: center;
-		padding-bottom: 80px;
-		position: relative;
-		z-index: 20;
-		display: none;
-		@screen md {
-			display: block;
-		}
-		.scroll-action-link {
-			display: inline-block;
-			transition: 0.3s all;
-			position: relative;
-			width: 28px;
-			height: 40px;
-			cursor: pointer;
-			img {
-				position: absolute;
-				top: 0;
-				left: 0;
-				width: 28px;
-				margin-top: 0;
-				animation: bounce 1s infinite alternate;
 			}
 		}
 	}

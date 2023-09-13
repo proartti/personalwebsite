@@ -1,17 +1,16 @@
 import React from 'react'
 
+import ScrollActionLink from './ScrollActionLink'
 import './styles.scss'
-
-//scrollTo="about" duration="1000" offset="-100"
 
 const Header = () => {
 	return (
 		<>
 			<header>
-				<div className="container max-w-screen-lg md:mx-auto">
-					<div className="flex">
-						<div className="container max-w-[50%] box-title">
-							<p className="upper-title">Hi, I am Tiago Donatti</p>
+				<div className="container max-w-screen-lg md:mx-auto sm:px-16">
+					<div className="flex flex-col md:flex-row">
+						<div className="container md:max-w-[50%] box-title">
+							<p className="upper-title mb-3">Hi, I am Tiago Donatti</p>
 							<h1 className="title">Front-end Developer</h1>
 							<p className="sub-title">
 								Welcome to my small spot on the web cosmos where you can know more about me and my
@@ -23,13 +22,7 @@ const Header = () => {
 							<img className="img-fluid" src="images/majortom-header.svg" alt="Major Tom" />
 						</div>
 					</div>
-					<div className="container">
-						<div className="scroll-action">
-							<a className="scroll-action-link">
-								<img src="images/icon-scroll.svg" />
-							</a>
-						</div>
-					</div>
+					<ScrollActionLink />
 				</div>
 
 				<div className="stars"></div>
