@@ -1,13 +1,13 @@
 import React from 'react'
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBehance, faXTwitter, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 import './styles.scss'
 
-type iconName = 'behance' | 'github' | 'linkedin' | 'twitter'
 export interface LinkButtonProps {
 	href: string
-	icon: iconName
+	icon: 'behance' | 'github' | 'linkedin' | 'twitter'
 	label: string
 }
 
