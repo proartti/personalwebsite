@@ -1,0 +1,39 @@
+.ship {
+	position: absolute;
+	top: 0;
+	left: calc(50% - 200px);
+	width: 80%;
+	max-width: 400px;
+	@screen md {
+		left: calc(50% - 165px);
+		max-width: 325px;
+		width: 65%;
+	}
+	@screen lg {
+		left: calc(50% - 187px);
+		max-width: 3750px;
+		width: 80%;
+	}
+	@screen xl {
+		left: calc(50% - 200px);
+		max-width: 400px;
+	}
+}
+.ship-background {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	img {
+		height: 450px;
+		aspect-ratio: 43/50;
+		@screen md {
+			height: 400px;
+		}
+		@screen lg {
+			height: 450px;
+		}
+		@screen lg {
+			height: 500px;
+		}
+	}
+}
