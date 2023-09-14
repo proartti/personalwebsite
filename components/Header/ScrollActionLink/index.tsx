@@ -3,11 +3,12 @@
 import React from 'react'
 
 import './styles.scss'
+import { SCROLL_TARGET_ID_ABOUT } from '../../About'
 
 const ScrollActionLink = () => {
 	const scrollTo = () => {
 		console.log('scrollTo')
-		document.querySelector('.about')?.scrollIntoView({
+		document.querySelector('#' + SCROLL_TARGET_ID_ABOUT)?.scrollIntoView({
 			behavior: 'smooth',
 		})
 	}
