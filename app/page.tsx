@@ -39,9 +39,9 @@ export default function Home() {
 
 			<SocialLinks links={links} />
 
-			<div>projects</div>
-
-			<footer>2021 - All rights reserved</footer>
+			<footer className="relative z-20 bg-white py-24 text-center font-roboto-condensed text-xl font-bold">
+				2021 - All rights reserved
+			</footer>
 		</>
 	)
 }
