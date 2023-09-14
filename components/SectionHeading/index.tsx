@@ -18,12 +18,11 @@ export const Small = ({ children }: SmallProps) => (
 const SectionHeading = ({ title, subtitle }: SectionHeadingProps) => {
 	return (
 		<div className="mb-24 w-[100%] text-center">
-			<h3 className="font-industry mb-0 text-4xl uppercase text-section-title md:text-5xl">
+			<h3 className="mb-0 font-industry text-4xl uppercase text-section-title md:text-5xl">
 				{title}
 			</h3>
-			<h4 className="font-roboto mx-4 text-2xl text-section-subtitle">{subtitle}</h4>
+			<h4 className="mx-4 font-roboto text-2xl text-section-subtitle">{subtitle}</h4>
 		</div>
 	)
 }
-
 export default SectionHeading

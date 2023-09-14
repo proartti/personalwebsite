@@ -41,7 +41,9 @@ const SocialLinks = ({ links }: SocialLinksProps) => {
 					<img src="images/majortom-flag.svg" />
 				</div>
 				<div className="btn-container">
-					<h3 className="mb-2 mt-10 w-full text-2xl md:mt-0 md:text-3xl">Let's stay connected</h3>
+					<h3 className="mb-2 mt-10 w-full text-2xl md:mt-0 md:text-3xl">
+						Let&apos;s stay connected
+					</h3>
 
 					{links.map((link, index) => (
 						<LinkButton key={index} {...link} />

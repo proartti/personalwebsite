@@ -19,11 +19,11 @@ const Phrases = () => {
 					<div className="col">
 						<div className="phrase-box">
 							<div className="phrase-text">
-								"For me, being a Senior Developer means more than just having the experience, it
-								means that as a Senior I can understand business and product choices and make
+								&quot;For me, being a Senior Developer means more than just having the experience,
+								it means that as a Senior I can understand business and product choices and make
 								decisions and plan before coding ever happens. When it comes to coding, a Senior
 								should be able not only to code but must importantly to code it right. Reliability,
-								proficiency, knowledge and scalability are the Senior’s keywords."
+								proficiency, knowledge and scalability are the Senior’s keywords.&quot;
 							</div>
 							<div className="phrase-author">Tiago Donatti</div>
 						</div>

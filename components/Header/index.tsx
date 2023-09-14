@@ -7,9 +7,9 @@ const Header = () => {
 	return (
 		<>
 			<header>
-				<div className="container max-w-screen-lg md:mx-auto sm:px-16">
+				<div className="container max-w-screen-lg sm:px-16 md:mx-auto">
 					<div className="flex flex-col md:flex-row">
-						<div className="container md:max-w-[50%] box-title">
+						<div className="box-title container md:max-w-[50%]">
 							<p className="upper-title mb-3">Hi, I am Tiago Donatti</p>
 							<h1 className="title">Front-end Developer</h1>
 							<p className="sub-title">
@@ -29,7 +29,6 @@ const Header = () => {
 				<div className="stars1"></div>
 				<div className="stars2"></div>
 				<div className="shooting-stars"></div>
-
 				<div className="hills-back">
 					<img src="images/hills-back.svg" />
 				</div>
