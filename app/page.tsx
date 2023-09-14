@@ -3,13 +3,14 @@ import React from 'react'
 import './page.scss'
 
 import Header from '../components/Header'
+import About from '../components/About'
 
 export default function Home() {
 	return (
 		<>
 			<Header />
 
-			<div className="about">about</div>
+			<About />
 
 			<div>phrases</div>
 
