@@ -27,6 +27,7 @@
     "compass-mixins": "^0.12.12",
     "eslint-plugin-prettier": "^5.0.0",
     "prettier": "^3.0.3",
+    "prettier-plugin-tailwindcss": "^0.5.4",
     "sass": "^1.66.1",
     "scss": "^0.2.4"
   }
