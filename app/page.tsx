@@ -4,6 +4,7 @@ import './page.scss'
 
 import Header from '../components/Header'
 import About from '../components/About'
+import Phrases from '@/components/Phrases'
 
 export default function Home() {
 	return (
@@ -12,10 +13,10 @@ export default function Home() {
 
 			<About />
 
-			<div>phrases</div>
+			<Phrases />
 
 			<div className="mid-position">
-				<div className="container position-relative">
+				<div className="position-relative container">
 					<div className="majortom-flag">
 						<img src="assets/img/majortom-flag.svg" />
 					</div>
@@ -56,7 +57,7 @@ export default function Home() {
 					<img src="assets/img/hill-flag.svg" />
 				</div>
 
-				<div className="container position-relative">
+				<div className="position-relative container">
 					<div className="hill-flag-background">
 						<img src="assets/img/hill-flag-background.svg" />
 					</div>
