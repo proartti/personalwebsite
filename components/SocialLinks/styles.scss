@@ -1,35 +1,7 @@
 // Import global variables
-@import '../styles/utils';
+@import '@/styles/utils';
 
-.mid-position {
-	position: relative;
-	padding: 2rem 0 0;
-	background-color: $bluegrey;
-	overflow: hidden;
-	@screen md {
-		padding: 0 10%;
-		overflow: visible;
-	}
-	> .container {
-		display: flex;
-		flex-wrap: wrap;
-		align-items: center;
-		margin: 0;
-		padding: 0;
-		max-width: 100%;
-	}
-	.majortom-flag {
-		position: relative;
-		z-index: 5;
-		width: 80%;
-		margin: 0 auto;
-		@screen md {
-			-webkit-box-flex: 0;
-			-ms-flex: 0 0 50%;
-			flex: 0 0 50%;
-			max-width: 50%;
-		}
-	}
+#social-links {
 	.hill-flag {
 		position: absolute;
 		bottom: 120px;
@@ -37,12 +9,12 @@
 
 		img {
 			width: 100%;
-			height: 50px;
+			height: 60px;
 			@screen sm {
 				height: 75px;
 			}
 			@screen md {
-				height: 50px;
+				height: 60px;
 			}
 			@screen lg {
 				height: 75px;
@@ -50,7 +22,7 @@
 		}
 		@screen md {
 			bottom: 0;
-			left: -20%;
+			left: calc(50% - 850px);
 		}
 	}
 	.hill-flag-background {
@@ -76,7 +48,7 @@
 			width: 750px;
 		}
 	}
-	.btn-box {
+	.btn-container {
 		text-align: center;
 		height: 130px;
 		width: 100%;
@@ -93,31 +65,30 @@
 			justify-content: center;
 			background-color: transparent;
 		}
-		> h3 {
-			margin-top: 40px;
-			@screen md {
-				display: block;
-				margin-top: 0;
-				flex: 0 1 100%;
-			}
-		}
 		> a {
 			flex: 1 0 20%;
+		}
+		.btn {
+			@apply m-1 inline-flex flex-row rounded px-3 py-2 align-middle text-sm;
 			@screen md {
-				margin: 0.25em;
+				@apply flex w-auto flex-col px-4 text-lg;
 			}
-			> span {
-				display: none;
-				@screen sm {
-					display: inline;
-				}
+			span {
+				@apply hidden sm:inline-flex sm:items-center md:justify-center;
 			}
-			> i {
+
+			svg {
+				@apply h-6 sm:mr-2;
 				@screen md {
-					font-size: 3em;
-					display: block;
+					@apply mb-1 mr-0 h-auto max-h-16 w-auto;
 				}
 			}
+		}
+		.btn-blue {
+			@apply bg-blue-500 text-white;
+		}
+		.btn-blue:hover {
+			@apply bg-blue-700;
 		}
 	}
 }

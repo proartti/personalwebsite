@@ -1,10 +1,32 @@
 import React from 'react'
 
-import './page.scss'
-
-import Header from '../components/Header'
-import About from '../components/About'
+import Header from '@/components/Header'
+import About from '@/components/About'
 import Phrases from '@/components/Phrases'
+import SocialLinks, { LinkButtonProps } from '@/components/SocialLinks'
+
+const links: LinkButtonProps[] = [
+	{
+		href: 'https://www.behance.net/proartti',
+		icon: 'behance',
+		label: 'Behance',
+	},
+	{
+		href: 'https://github.com/proartti/',
+		icon: 'github',
+		label: 'GitHub',
+	},
+	{
+		href: 'https://www.linkedin.com/in/proartti/',
+		icon: 'linkedin',
+		label: 'LinkedIn',
+	},
+	{
+		href: 'https://twitter.com/tiagodonatti',
+		icon: 'twitter',
+		label: 'Twitter',
+	},
+]
 
 export default function Home() {
 	return (
@@ -15,54 +37,7 @@ export default function Home() {
 
 			<Phrases />
 
-			<div className="mid-position">
-				<div className="position-relative container">
-					<div className="majortom-flag">
-						<img src="assets/img/majortom-flag.svg" />
-					</div>
-					<div className="btn-box">
-						<h3>Let's stay connected</h3>
-						<a
-							href="https://www.behance.net/proartti"
-							className="btn btn-primary btn-lg"
-							target="_blank"
-						>
-							<i className="fa fa-behance"></i> <span>Behance</span>
-						</a>
-						<a
-							href="https://github.com/proartti/"
-							className="btn btn-primary btn-lg"
-							target="_blank"
-						>
-							<i className="fa fa-github"></i> <span>GitHub</span>
-						</a>
-						<a
-							href="https://www.linkedin.com/in/proartti/"
-							className="btn btn-primary btn-lg"
-							target="_blank"
-						>
-							<i className="fa fa-linkedin"></i> <span>LinkedIn</span>
-						</a>
-						<a
-							href="https://twitter.com/tiagodonatti"
-							className="btn btn-primary btn-lg"
-							target="_blank"
-						>
-							<i className="fa fa-twitter"></i> <span>Twitter</span>
-						</a>
-					</div>
-				</div>
-
-				<div className="hill-flag">
-					<img src="assets/img/hill-flag.svg" />
-				</div>
-
-				<div className="position-relative container">
-					<div className="hill-flag-background">
-						<img src="assets/img/hill-flag-background.svg" />
-					</div>
-				</div>
-			</div>
+			<SocialLinks links={links} />
 
 			<div>projects</div>
 

@@ -14,7 +14,7 @@ const Phrases = () => {
 				<img src="images/edge-bottom.svg" />
 			</div>
 
-			<div className="container">
+			<div className="container mx-auto max-w-screen-lg">
 				<div className="row">
 					<div className="col">
 						<div className="phrase-box">
