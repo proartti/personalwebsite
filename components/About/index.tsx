@@ -1,8 +1,8 @@
 import React from 'react'
+import Ship from './Ship'
 
 import Section from '../Section'
 import SectionHeading, { Small } from '../SectionHeading'
-import './styles.scss'
 
 export const SCROLL_TARGET_ID_ABOUT = 'about'
 
@@ -46,12 +46,7 @@ const About = () => {
 							<strong>Live long and prosper</strong>
 						</p>
 					</div>
-					<div className="ship-container">
-						<img className="ship" src="images/ship.svg" />
-						<div className="ship-background">
-							<img src="images/ship-background.svg" />
-						</div>
-					</div>
+					<Ship />
 				</div>
 			</div>
 		</Section>
