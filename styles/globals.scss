@@ -1,14 +1,11 @@
+// Adobe Fonts
+@import url('https://use.typekit.net/vse6egl.css');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @import 'utils';
-
-// Import compass mixins
-@import '~compass-mixins/lib/compass';
-
-// Adobe Fonts
-@import url('https://use.typekit.net/vse6egl.css');
 
 // Tailwind colors variables
 @layer base {
