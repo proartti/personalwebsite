@@ -29,6 +29,7 @@ const links: LinkButtonProps[] = [
 ]
 
 export default function Home() {
+	const currentYear = new Date().getFullYear()
 	return (
 		<>
 			<Header />
@@ -40,7 +41,7 @@ export default function Home() {
 			<SocialLinks links={links} />
 
 			<footer className="relative z-20 bg-white py-24 text-center font-roboto-condensed text-xl font-bold">
-				2021 - All rights reserved
+				{currentYear} - All rights reserved
 			</footer>
 		</>
 	)
