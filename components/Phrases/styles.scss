@@ -1,12 +1,9 @@
-// Import global variables
-@import '../../styles/utils';
-
 #phrases {
+	@apply bg-space-purple;
 	background-image: url('/images/bg-space.jpg');
 	background-position: center bottom;
 	background-attachment: fixed;
 	background-repeat: repeat-y;
-	background-color: $spacepurple;
 	padding: 10rem 0 10rem;
 	@screen sm {
 		padding-bottom: 12rem;

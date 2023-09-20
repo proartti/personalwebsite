@@ -1,12 +1,7 @@
-@import '../../styles/globals';
+@import '@/styles/utils';
 
 header {
-	position: relative;
-	background-color: $purple;
-	overflow: hidden;
-	@include filter-gradient($dark-purple, $light-purple, vertical);
-	@include background-image(linear-gradient($dark-purple 0%, $light-purple 100%));
-
+	@apply relative overflow-hidden bg-purple bg-gradient-to-b from-[#4F1E71FF] to-[#722FA5FF];
 	.box-title {
 		margin-top: 20px;
 		color: white;
