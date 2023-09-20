@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBehance, faXTwitter, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
@@ -20,9 +21,9 @@ const LinkButton = ({ href, icon, label }: LinkButtonProps) => {
 	}
 
 	return (
-		<a href={href} className="btn btn-blue" target="_blank">
+		<Link href={href} className="btn btn-blue" target="_blank">
 			<FontAwesomeIcon fixedWidth icon={iconsMap[icon]} /> <span>{label}</span>
-		</a>
+		</Link>
 	)
 }
 
