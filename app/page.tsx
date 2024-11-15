@@ -34,9 +34,9 @@ export default function Home() {
 		<>
 			<Header />
 
-			<About />
+			{/* <About />
 
-			<Phrases />
+			<Phrases /> */}
 
 			<SocialLinks links={links} />
 

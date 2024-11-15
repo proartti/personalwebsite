@@ -1,28 +1,30 @@
-import React from 'react'
+'use client'
+import React, { useEffect } from 'react'
+import { animate } from 'motion'
 
 import ScrollActionLink from './ScrollActionLink'
 import './styles.scss'
 
 const Header = () => {
+	useEffect(() => {
+		const title = document.querySelectorAll('.title')
+		animate(title, { x: [-100, 0], opacity: [0, 1] }, { duration: 3, easing: [0.02, 0, 0, 1] })
+	}, [])
+
 	return (
 		<>
 			<header>
-				<div className="container max-w-screen-lg sm:px-16 md:mx-auto">
+				<div className="container max-w-screen-lg sm:px-16 md:mx-auto md:min-h-[650px]">
 					<div className="flex flex-col md:flex-row">
 						<div className="box-title container md:max-w-[50%]">
 							<p className="upper-title mb-3">Hi, I am Tiago Donatti</p>
-							<h1 className="title">Front-end Developer</h1>
-							<p className="sub-title">
-								Welcome to my small spot on the web cosmos where you can know more about me and my
-								work. Buckle up and let’s go!
-							</p>
+							<h1 className="title">Software Engineer</h1>
 						</div>
 
 						<div className="majortom">
 							<img className="img-fluid" src="images/majortom-header.svg" alt="Major Tom" />
 						</div>
 					</div>
-					<ScrollActionLink />
 				</div>
 
 				<div className="stars"></div>
