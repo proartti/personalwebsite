@@ -4,6 +4,7 @@ import Header from '@/components/Header'
 import About from '@/components/About'
 import Phrases from '@/components/Phrases'
 import SocialLinks, { LinkButtonProps } from '@/components/SocialLinks'
+import Agents from '@/components/Agents'
 
 const links: LinkButtonProps[] = [
 	{
@@ -37,6 +38,7 @@ export default function Home() {
 			{/* <About />
 
 			<Phrases /> */}
+			<Agents />
 
 			<SocialLinks links={links} />
 
