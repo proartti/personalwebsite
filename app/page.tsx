@@ -1,10 +1,9 @@
 import React from 'react'
 
-import Header from '@/components/Header'
+import Hero from '@/components/Hero'
 import About from '@/components/About'
 import Phrases from '@/components/Phrases'
 import SocialLinks, { LinkButtonProps } from '@/components/SocialLinks'
-import Agents from '@/components/Agents'
 
 const links: LinkButtonProps[] = [
 	{
@@ -33,12 +32,9 @@ export default function Home() {
 	const currentYear = new Date().getFullYear()
 	return (
 		<>
-			<Header />
+			<Hero />
 
-			{/* <About />
-
-			<Phrases /> */}
-			<Agents />
+			<Phrases />
 
 			<SocialLinks links={links} />
 

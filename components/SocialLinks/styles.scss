@@ -1,66 +1,38 @@
-#social-links {
-	.hill-flag {
-		position: absolute;
-		bottom: 120px;
-		z-index: 2;
+.goo-explorer-rive {
+	display: block;
+	width: 100%;
+	max-width: 1561px;
+	min-width: 550px;
+	aspect-ratio: 1561 / 333;
+	margin: 0 auto;
+}
 
-		img {
-			width: 100%;
-			height: 60px;
-			@screen sm {
-				height: 75px;
-			}
-			@screen md {
-				height: 60px;
-			}
-			@screen lg {
-				height: 75px;
-			}
-		}
-		@screen md {
-			bottom: 0;
-			left: calc(50% - 850px);
-		}
-	}
-	.hill-flag-background {
-		position: absolute;
-		bottom: -50px;
-		left: -5%;
-		width: 420px;
-		img {
-			width: 100%;
-			height: auto;
-		}
-		@screen sm {
-			left: 0;
-			width: 550px;
-		}
-		@screen md {
-			left: -200px;
-			width: 650px;
-			bottom: -250px;
-		}
-		@screen xl {
-			left: -250px;
-			width: 750px;
-		}
-	}
+#social-links {
+	@apply bg-space-purple;
+	background-image: url('/images/bg-space1.jpg');
+	background-position: center bottom;
+	background-attachment: fixed;
+	background-repeat: repeat-y;
+	padding-top: 10rem;
+	padding-bottom: 0;
+	position: relative;
 	.btn-container {
 		text-align: center;
 		height: 130px;
 		width: 100%;
 		position: relative;
 		z-index: 3;
-		background-color: white;
 		@screen md {
+			position: absolute;
+			left: 51%;
+			bottom: 27%;
 			display: flex;
 			flex-direction: row;
 			flex-wrap: wrap;
-			max-width: 50%;
 			height: auto;
+			width: 500px;
 			align-items: center;
 			justify-content: center;
-			background-color: transparent;
 		}
 		> a {
 			flex: 1 0 20%;

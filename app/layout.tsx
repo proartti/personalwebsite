@@ -1,6 +1,7 @@
 import React from 'react'
 import type { Metadata } from 'next'
 
+// @ts-ignore -- Stylesheet modules are handled by the application's bundler.
 import '@/styles/globals.scss'
 
 export const metadata: Metadata = {
@@ -11,7 +12,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
 	return (
 		<html lang="en">
-			<body className="maincsstes">{children}</body>
+			<body className="overflow-x-hidden">{children}</body>
 		</html>
 	)
 }

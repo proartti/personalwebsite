@@ -1,7 +1,8 @@
 @import '@/styles/utils';
 
 header {
-	@apply relative overflow-hidden bg-purple bg-gradient-to-b from-[#4F1E71FF] to-[#722FA5FF];
+	//from-[#2f083b] to-[#722FA5FF];from-black to-[#070144];
+	@apply relative overflow-hidden bg-purple bg-gradient-to-b from-black to-[#070144];
 	.box-title {
 		margin-top: 20px;
 		color: white;
@@ -162,16 +163,10 @@ header {
 	}
 }
 
-@keyframes bounce {
-	to {
-		top: 10px;
-	}
-}
-
 // Code based from https://codepen.io/johnbgarcia/pen/YpWqXK?editors=1100
 $starFieldWidth: 3200;
 $starFieldHeight: 2560;
-$starStartOffset: 600px;
+$starStartOffset: 1200px;
 
 $starOneScrollDuration: 100s;
 $starTwoScrollDuration: 125s;
@@ -181,6 +176,20 @@ $numStarTwoStars: 700;
 $numStarThreeStars: 200;
 $numShootingStars: 10;
 $width: 100%;
+
+// Angle of the travel path from the shooting star's start point to its end point
+// (atan2(deltaY, deltaX) of the translate values below), minus the element's
+// unrotated pointing direction (straight down, 90deg). Kept constant across the
+// animation so the fading tail always lines up with the direction of travel.
+$shootingStarAngle: -45deg;
+
+// Registered as a <color> so the browser tweens it every frame instead of
+// snapping at each keyframe, letting the gradient below animate smoothly.
+@property --shooting-star-color {
+	syntax: '<color>';
+	inherits: false;
+	initial-value: #{$bluegrey};
+}
 
 @function create-stars($n) {
 	$stars: '#{random($starFieldWidth)}px #{random($starFieldHeight)}px #{$bluegrey}';
@@ -223,7 +232,7 @@ $width: 100%;
 	position: absolute;
 	bottom: 0;
 	right: 0;
-	background: linear-gradient(to top, $goldyellow, rgba($goldyellow, 0));
+	background: linear-gradient(to top, var(--shooting-star-color), transparent);
 	animation: animShootingStar $speed linear infinite;
 }
 
@@ -240,7 +249,7 @@ $width: 100%;
 }
 
 .shooting-stars {
-	@include shooting-star-template(0, 5px, 10s);
+	@include shooting-star-template(0, 5px, 7s);
 }
 
 @keyframes animStar {
@@ -254,17 +263,22 @@ $width: 100%;
 }
 
 @keyframes animShootingStar {
-	from {
-		// transform: translateY(0px) translateX(0px) rotate(-45deg);
-		transform: translateY(-#{$starFieldHeight}px) translateX(-#{$starFieldWidth}px) rotate(-45deg);
+	0% {
+		transform: translateY(-#{$starFieldHeight}px) translateX(-#{$starFieldWidth}px)
+			rotate($shootingStarAngle);
 		opacity: 0;
 		height: 5px;
+		--shooting-star-color: #{$bluegrey};
 	}
 
-	to {
-		// transform: translateY(-#{$starFieldHeight}px) translateX(-#{$starFieldWidth}px) rotate(-45deg);
-		transform: translateY(100px) translateX(-500px) rotate(-50deg);
+	50% {
+		--shooting-star-color: #{$goldyellow};
+	}
+
+	100% {
+		transform: translateY(100px) translateX(-500px) rotate($shootingStarAngle);
 		opacity: 1;
 		height: 400px;
+		--shooting-star-color: #{$light-purple};
 	}
 }
