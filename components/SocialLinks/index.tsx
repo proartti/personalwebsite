@@ -1,6 +1,6 @@
 'use client'
 
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import Link from 'next/link'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -36,15 +36,35 @@ interface SocialLinksProps {
 }
 
 const SocialLinks = ({ links }: SocialLinksProps) => {
-	const { RiveComponent } = useRive({
+	// Sits flush against the bottom edge of the graphic, so it enters the viewport
+	// at exactly the moment the graphic has become fully visible.
+	const bottomEdgeRef = useRef<HTMLDivElement>(null)
+
+	const { rive, RiveComponent } = useRive({
 		src: '/rive_files/goo_explorer.riv',
 		stateMachine: 'StateMachine',
-		autoplay: true,
+		autoplay: false,
 		layout: new Layout({
 			fit: Fit.FitWidth,
 			alignment: Alignment.BottomCenter,
 		}),
 	})
+
+	// Rive still draws the first frame when autoplay is off, so the graphic is on
+	// screen the whole time; only the state machine waits for the scroll.
+	useEffect(() => {
+		const bottomEdge = bottomEdgeRef.current
+		if (!rive || !bottomEdge) return
+
+		const observer = new IntersectionObserver(([entry]) => {
+			if (!entry.isIntersecting) return
+			rive.play()
+			observer.disconnect()
+		})
+
+		observer.observe(bottomEdge)
+		return () => observer.disconnect()
+	}, [rive])
 
 	return (
 		<>
@@ -68,7 +88,10 @@ const SocialLinks = ({ links }: SocialLinksProps) => {
 					</div>
 				</div>
 
-				<RiveComponent className="goo-explorer-rive" />
+				<div className="relative">
+					<RiveComponent className="goo-explorer-rive" />
+					<div ref={bottomEdgeRef} aria-hidden className="absolute bottom-0 h-px w-full" />
+				</div>
 			</div>
 		</>
 	)
