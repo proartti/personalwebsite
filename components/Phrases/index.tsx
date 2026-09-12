@@ -12,9 +12,6 @@ import './styles.scss'
 const Phrases = () => {
 	return (
 		<Section id="phrases" className="bg-[#f4f6f8]">
-			<div>
-				<Image src="/images/edge-top.svg" alt="Edge Top" width={650} height={45} />
-			</div>
 			<div className="edge-bottom">
 				<Image src="/images/edge-top.svg" alt="Edge Bottom" width={650} height={45} />
 			</div>

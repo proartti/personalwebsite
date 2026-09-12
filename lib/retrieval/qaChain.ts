@@ -1,8 +1,6 @@
 import { ChatOpenAI, OpenAIEmbeddings } from '@langchain/openai'
 import { MemoryVectorStore } from 'langchain/vectorstores/memory'
 import { PromptTemplate } from '@langchain/core/prompts'
-import { RunnableSequence } from '@langchain/core/runnables'
-import { StringOutputParser } from '@langchain/core/output_parsers'
 
 let vectorStorePromise: Promise<MemoryVectorStore> | null = null
 

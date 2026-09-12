@@ -50,9 +50,11 @@ const SocialLinks = ({ links }: SocialLinksProps) => {
 		<>
 			<div id="social-links" className="relative overflow-hidden bg-blue-grey pt-6">
 				<div className="container mx-auto flex h-96 max-w-screen-lg flex-wrap items-start">
-					<div className="mt-10 w-full text-center text-6xl font-bold text-white md:text-4xl">
-						Let's build something{' '}
-						<span className="block text-5xl text-yellow-400">out of this world!</span>
+					<div className="mt-14 w-full text-center text-5xl font-bold text-white">
+						Let&apos;s build something{' '}
+						<span className="mt-2 block text-6xl font-black text-yellow-400">
+							out of this world!
+						</span>
 					</div>
 
 					<div className="btn-container">

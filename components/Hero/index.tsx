@@ -1,6 +1,5 @@
 'use client'
-import React, { useEffect, useState } from 'react'
-import { animate } from 'motion'
+import React, { useState } from 'react'
 import { BiSend } from 'react-icons/bi'
 import { useRive } from '@rive-app/react-webgl2'
 
@@ -15,11 +14,6 @@ const initialGreeting: ChatBubble = {
 }
 
 const Hero = () => {
-	// useEffect(() => {
-	// 	const title = document.querySelectorAll('.title')
-	// 	animate(title, { x: [-100, 0], opacity: [0, 1] }, { duration: 3, easing: [0.02, 0, 0, 1] })
-	// }, [])
-
 	const { RiveComponent } = useRive({
 		src: '/rive_files/majortom.riv',
 		stateMachine: 'State Machine 1',
@@ -113,7 +107,7 @@ const Hero = () => {
 									onClick={() => setInputValue('Tell me about your work experience')}
 									className="mr-2 bg-transparent p-0 font-semibold text-yellow-500 hover:underline"
 								>
-									"Tell me about your work experience"
+									&quot;Tell me about your work experience&quot;
 								</button>
 							</div>
 						</div>
@@ -131,27 +125,6 @@ const Hero = () => {
 					<img src="images/hills-front.svg" />
 				</div>
 
-				{/* <div className="pentagon pos1">
-					<img src="images/pentagon.svg" />
-				</div>
-				<div className="pentagon pos2">
-					<img src="images/pentagon-outline.svg" />
-				</div>
-				<div className="pentagon pos3">
-					<img src="images/pentagon.svg" />
-				</div>
-				<div className="pentagon pos4">
-					<img src="images/pentagon-outline.svg" />
-				</div>
-				<div className="pentagon pos5">
-					<img src="images/pentagon.svg" />
-				</div>
-				<div className="pentagon pos6">
-					<img src="images/pentagon.svg" />
-				</div>
-				<div className="pentagon pos7">
-					<img src="images/pentagon-outline.svg" />
-				</div> */}
 			</header>
 		</>
 	)
