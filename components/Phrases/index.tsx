@@ -25,9 +25,9 @@ const Phrases = () => {
 							viewport={{ once: true, amount: 0.7 }}
 							transition={{ duration: 0.7, delay: 0.7, ease: 'backOut' }}
 						>
-							Build cool stuff
+							This is the moment
 							<br />
-							is my passion
+							to build your idea!
 						</motion.div>
 					</div>
 
@@ -38,9 +38,9 @@ const Phrases = () => {
 							viewport={{ once: true, amount: 0.7 }}
 							transition={{ duration: 0.7, delay: 0.9, ease: 'backOut' }}
 						>
-							Build cool stuff
+							More than 15 year
 							<br />
-							is my passion
+							of hands on experience
 						</motion.div>
 					</div>
 
@@ -51,9 +51,9 @@ const Phrases = () => {
 							viewport={{ once: true, amount: 1 }}
 							transition={{ duration: 0.7, delay: 0.8, ease: 'backOut' }}
 						>
-							Build cool stuff
+							Smart use of AI
 							<br />
-							is my passion
+							boosting speed and quality
 						</motion.div>
 					</div>
 
